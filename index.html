@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Invitación Especial</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHNvYWk5MTV4ZHd0ZXRoNDJkNTlsbXEyejJ6OGdycDFjYzQ1MmdvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/130do0lQXXcsla/giphy.gif') no-repeat center center/cover;
+        font-family: 'Segoe UI', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 25px;
+        border-radius: 15px;
+        max-width: 420px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+    h1 {
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+    }
+    input {
+        background: #222;
+        color: #fff;
+    }
+    button {
+        background-color: #ffcc00;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ffaa00;
+    }
+</style>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="index.js"></script>
+</head>
+<body>
+
+<div class="overlay">
+    <h1>🍻 Fiesta Intelectual 🍻</h1>
+    <p><strong>📍 Dirección:</strong>casa quinta las Aves calle 6 bis N° 3019 Entre  92 y 93 , La Plata</p>
+    <p><strong>🗓 Fecha:</strong> 30 de Agosto 2025 - 12:30 hs</p>
+    <p>Confirma tu asistencia completando el siguiente formulario:</p>
+    
+    <form id="form">
+        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email"  id = "email"placeholder="Tu email" required />
+        <button type="submit">Confirmar asistencia</button>
+    </form>
+    <p><strong>🎉 traer bebidas </strong> </p>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+</html>
