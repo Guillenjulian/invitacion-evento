@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Número de WhatsApp (con código de país, sin + ni espacios)
-        const numeroWhatsApp = "541150287136"; // ← reemplaza por tu número real
+        const numeroWhatsApp = "5492216054560"; // ← reemplaza por tu número real
 
         // Mensaje prellenado
         const mensaje = `Hola, soy ${nombre}. Confirmo asistencia al evento. Mi email es ${email}`;
